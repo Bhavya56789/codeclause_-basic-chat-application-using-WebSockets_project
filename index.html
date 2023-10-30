@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Application</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chat-box {
+            width: 1300px;
+            height: 500px;
+            border: 2px solid #080000;
+            overflow-y: scroll;
+        }
+        #message-input {
+            width: 300px;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("https://images.hdqwalls.com/wallpapers/microsoft-surface-pro-stock-4k-aq.jpg"); /* Replace "your-image.jpg" with the path to your image file */
+            background-size:cover; 
+            background-repeat: repeat;
+            background-attachment: no-repeat; 
+        }
+    </style>
+</head>
+<body>
+   
+</body>
+</html>
+
+<body>
+    <h1>Chat Application</h1>
+    
+    <div id="chat-box">
+      
+    </div>
+    
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+    
+    <script>
+        function sendMessage() {
+            
+            var message = document.getElementById("message-input").value;
+         
+            var chatBox = document.getElementById("chat-box");
+            chatBox.innerHTML += "<p>You: " + message + "</p>";
+            
+            
+            document.getElementById("message-input").value = "";
+            
+            
+        }
+    </script>
+</body>
+</html>
